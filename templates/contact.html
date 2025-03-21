@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us - ElectroValue{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Contact Header -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">Contact Us</h1>
+        <p class="lead">Have questions or feedback? We'd love to hear from you!</p>
+    </div>
+    
+    <div class="row g-5">
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+            <div class="card bg-dark">
+                <div class="card-body p-4">
+                    <h2 class="card-title mb-4">Send Us a Message</h2>
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info">
+                            <i class="fas fa-paper-plane me-2"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="col-lg-5">
+            <div class="card bg-dark mb-4">
+                <div class="card-body p-4">
+                    <h2 class="card-title mb-4">Get in Touch</h2>
+                    <div class="d-flex mb-4">
+                        <div class="me-3 text-info fs-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h5>Email</h5>
+                            <p class="mb-0">support@electrovalue.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="me-3 text-info fs-4">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h5>Phone</h5>
+                            <p class="mb-0">(123) 456-7890</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="me-3 text-info fs-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h5>Address</h5>
+                            <p class="mb-0">123 Tech Avenue<br>San Francisco, CA 94107<br>United States</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="me-3 text-info fs-4">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h5>Business Hours</h5>
+                            <p class="mb-0">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday - Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="card bg-dark">
+                <div class="card-body p-4">
+                    <h2 class="card-title mb-4">Connect With Us</h2>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-outline-info btn-lg rounded-circle">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-info btn-lg rounded-circle">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-info btn-lg rounded-circle">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-info btn-lg rounded-circle">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-info btn-lg rounded-circle">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FAQ Section -->
+    <div class="mt-5">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item bg-dark border-0 mb-3">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        How accurate are your price estimates?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Our price estimates are based on real market data, historical sales, and advanced analysis algorithms. While we strive for accuracy, prices can vary based on many factors including local market conditions, timing, and the specific condition of your device. Our estimates typically fall within 10-15% of actual market values.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark border-0 mb-3">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Do you buy devices or facilitate sales?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        No, we don't buy devices directly or facilitate sales between users. We simply provide price estimates to help you make informed decisions. If you want to sell your device, you'll need to use marketplaces like eBay, Amazon, or local options.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark border-0 mb-3">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What should I do if my device isn't recognized?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        If your specific device model isn't recognized, try entering a similar model from the same brand and generation. You can also provide detailed specifications to help our system better estimate the value. If you continue to have issues, feel free to contact our support team.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark border-0 mb-3">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        How are the product recommendations generated?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Our product recommendations are based on your current device and estimated value. We suggest alternatives or upgrades that might interest you, considering factors like performance improvements, newer models, and complementary accessories. These recommendations include affiliate links, which means we may earn a small commission if you purchase through them, at no extra cost to you.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark border-0">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Is my data secure when I upload device photos?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, we take data security seriously. Any photos you upload are used only for the purpose of estimating your device's value and are stored securely. We don't share your photos with third parties, and they're automatically deleted from our servers after 30 days. For more information, please refer to our Privacy Policy.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real application, you would send this data to your backend
+            // For this demo, we'll just show a success message
+            alert('Thank you for your message! We will get back to you soon.');
+            
+            // Reset the form
+            contactForm.reset();
+        });
+    }
+});
+</script>
+{% endblock %}
